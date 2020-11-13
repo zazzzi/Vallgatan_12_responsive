@@ -1,0 +1,68 @@
+@media only screen and (min-width: 1200px) {
+    /* Universal Classes */
+    .showDesktop {
+        display: unset;
+    }
+
+
+    /* Product page  */
+
+    .productWrapperDesktop {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas: 
+        "carousel box";
+    }
+
+    .productCarousel {
+        left: 0;
+        width: unset;
+        grid-area: carousel;
+    }
+    .productBoxDesktopRight {
+        right: 0;
+        grid-area: box;
+        margin: 8em 6em 4em 6em;
+    }
+    .productWrapper {
+        margin: 2em 0 0 0;
+        flex-direction: row;
+    }
+
+    .wrapperActive p {
+        margin-left: 2em;
+        margin-top: 2em;
+    }
+    
+    .productCard2 {
+        height: 100%;
+        width: 100%;
+    }
+    /* Recomended/you may also like  */
+    .productAlt2 {
+   
+    }
+    .productAlt2 img {
+        width: 15em;
+        width: 100%;
+        height: 100%;
+        margin-top: 1rem;
+        object-fit: cover;
+    
+    }
+    
+    .productAltInfo {
+        justify-content: flex-end;
+        flex-direction: column;
+        padding-right: 0.2em;
+
+    }
+    
+    .productAltinfo > p {
+        padding-left: 2rem;
+        width: 5rem;
+    }
+    
+    
+}

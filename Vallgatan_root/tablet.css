@@ -1,0 +1,150 @@
+@media only screen and (min-width: 570px) {
+
+    /* Universal Classes */
+
+    .showTablet {
+        display: unset;
+    }
+    .hiddenTablet {
+        display: none;
+    }
+
+
+    /* Header */
+    header {
+        background-color: var(--colour-v12);
+    }
+    .headerNavigation {
+        display: flex;
+    }
+    .headerNavigation button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5em;
+        font-weight: 500;
+        color: white;
+    }
+
+    .headerLogo {
+        position: fixed;
+        left: calc(50% - 20px);
+    }
+    /* Main content - landing cards */
+    .mainCont {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-template-rows: auto;
+    }
+    .mainCont2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(24rem, 1fr));
+        grid-template-rows: auto;
+    }
+    .marginForHeader {
+        margin-top: 4.250em;
+    }
+    .card2 {
+        max-height: 35em;
+    }
+    .card2 img {
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
+
+    /* TERMS OF SERVICE and delivery time  */
+    .tosInfo {
+        display: block;
+        text-align: center;
+        align-items: center;
+        margin: 2em 0 2em 0;
+        font-size: 110%;
+    }
+    .tosInfo p {
+        margin: 0 2em 0 2em;
+    }
+    /* News letter + form  */
+    .newsLetterCont {
+        display: flex;
+        flex-direction: column;
+        height: 10em;
+        background-color: var(--colour-v12);
+        align-items: center;
+    }
+    .newsLetterCont p {
+        font-size: 110%;
+        margin: 0 4em 0 4em;
+        text-align: center;
+    }
+    .emailForm {
+        width: 20em;
+        border-bottom: 0.1em solid white;
+    }
+    .emailForm input {
+        width: 100%;
+        border: none;
+        background-color: transparent;
+        text-align: center;
+        transition: width 400ms ease;
+    }
+    .emailForm input:focus {
+        outline: none;
+    }
+    /* Grid for products */
+    .productCont {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+    }
+
+     /* MediaQ for amount of columns on smaller screens */
+    @media only screen and (min-width: 1050px) {
+        .productCont {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: auto;
+        }
+    }
+    .productCont img {
+        width: 100%;
+    }
+    .cardSmall {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .cardSmall h2 {
+        position: absolute;
+    }
+    .cardSmallTitle {
+        position: absolute;
+        top: 1em;
+        left: 1em;
+    }
+    /* Footermobile hidden  */
+    .footerMobile {
+        display: none;
+    }
+    /* Footer large */
+    .footerLarge {
+        background-color: white;
+        display: inline;
+    }
+    .footerLtop {
+        justify-content: space-evenly;
+    }
+    .footerLtop>div {
+        margin: 1em;
+        flex-direction: column;
+    }
+    .footerLtop a {
+        text-decoration: none;
+        color: black;
+    }
+    .footerLBottom {
+        font-size: 0.8em;
+        justify-content: center;
+    }
+}

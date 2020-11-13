@@ -1,0 +1,231 @@
+* {
+    box-sizing: border-box;
+    font-family: "Oswald", serif, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    padding: 0;
+    margin: 1rem;
+
+    letter-spacing: .1rem;
+    font-weight: bold;
+    font-size: 38px;
+}
+
+h4 {
+    margin: 0 0 .1rem 0;
+    letter-spacing: .1rem;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h5 {
+    margin: 0 0 .1rem 0;
+    letter-spacing: .1rem;
+    font-weight: lighter;
+    font-size: 18px;
+}
+h6 {
+    margin: 0 0 .1rem 0;
+    letter-spacing: .1rem;
+    font-weight: lighter;
+    font-size: 1rem;
+}
+
+p {
+    letter-spacing: .1rem;
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+:root {
+    --header-height: 4.25rem;
+    --colour-v12: #5BC79E;
+}
+
+/* Universal classes */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    justify-content: center;
+}
+
+.stretch {
+    width: 100%
+}
+
+.outlineNone {
+    outline: 0;
+}
+
+.hiddenMobile {
+    display: none;;
+}
+
+/* Top menu starts here */
+header {
+    background-color: transparent;
+    height: var(--header-height);
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    
+}
+
+.headerInner {
+    height: var(--header-height);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+.headerLogo button {
+    background-color: transparent;
+    border: none;
+}
+
+.headerLogo button:focus {
+    outline: 0;
+}
+
+.headerRight {
+    position: absolute;
+    right: 1em;
+    color: white;
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.iconCartCont {
+    margin-left: 1em;
+}
+
+.iconCart {
+    margin: 1rem 0 1rem 0;
+
+}
+
+/* Searchbar in header */
+.searchCont {
+    margin: .7rem 0 .7rem 0;
+}
+
+.searchInput {
+    width: 1.5rem;
+    margin-top:.2em ;
+    border: none;
+
+    outline: none;
+ 
+    font-size: 1rem;
+    background-image:url(./icons/search-bar-vit.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchBox input[type=text]:focus {
+    width: 13rem;
+    border-bottom: .1rem solid white;
+
+}
+
+
+/* Landing page content */
+.mainCont {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: auto;
+    
+}
+.mainCont2 {
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    grid-template-rows: auto;
+    
+}
+.card {
+    position: relative;
+    text-align: center;
+}
+
+.card img {
+    width: 100%;
+    
+}
+
+.textOverlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    transform: translate(-50%, -50%);
+    flex-direction: column;
+    align-items: center;
+
+    width: 100%;
+    padding: 0;
+
+    color: var(--colour-v12);
+}
+
+.textOverlay button {
+    align-items: center;
+
+    width: 7.5rem;
+    padding: .08rem 2rem .08rem 2rem;
+
+    border: white solid;
+    border-width: .15rem;
+
+    color: white;
+    background-color: transparent;
+
+    font-size: 27px;
+    font-weight: bolder;
+}
+
+
+/* Footer */
+.footerMobile {
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    bottom: 1.5%;
+
+    background-color: transparent;
+}
+
+.footerInner {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .8rem;
+}
+
+.footerInner button {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+}
+
+.footerLarge {
+    display: none;
+}

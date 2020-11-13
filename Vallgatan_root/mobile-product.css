@@ -1,0 +1,408 @@
+* {
+    box-sizing: border-box;
+    font-family: "Oswald", serif, 'Times New Roman', Times, serif;
+    text-transform: uppercase;
+    letter-spacing: .1rem;
+}
+
+h2 {
+    padding: 0;
+    margin: 1rem;
+
+    font-weight: bold;
+    font-size: 38px;
+}
+
+h4 {
+    margin: 0 0 .1rem 0;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+h5 {
+    margin: 0 0 .1rem 0;
+    font-weight: lighter;
+    font-size: 18px;
+}
+
+p {
+    font-size: .8rem;
+    font-weight: lighter;
+}
+
+html, body {
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    --header-height: 4.25rem;
+    --colour-v12: #5BC79E;
+}
+
+/* Universal classes */
+.flex {
+    display: flex;
+}
+
+.grid {
+    display: grid;
+}
+
+.center {
+    justify-content: center;
+}
+
+.stretch {
+    width: 100%
+}
+
+.outlineNone {
+    outline: 0;
+}
+
+.hiddenMobile {
+    display: none;;
+}
+
+
+/* Top menu starts here */
+header {
+    background-color: white;
+    height: var(--header-height);
+    position: fixed;
+    z-index: 9999;
+    top: 0%;
+    
+}
+
+
+.headerInner {
+    height: var(--header-height);
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+}
+
+
+.headerLogo button {
+    background-color: transparent;
+    border: none;
+}
+
+.headerLogo button:focus {
+    outline: none;
+}
+
+.headerRight {
+    position: absolute;
+    right: 1em;
+    color: var(--colour-v12);
+    align-items: flex-end;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.iconCartCont {
+    margin-left: 1em;
+}
+.iconCart {
+    margin: 1rem 0 1rem 0;
+
+}
+
+/* Searchbar in header */
+.searchCont {
+    margin: .7rem 0 .7rem 0;
+}
+
+.searchInput {
+    width: 1.5rem;
+    border: none;
+    margin-top:.2em ;
+    outline: none;
+ 
+    font-size: 1rem;
+    background-image:url(./icons/search-bar-green.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    transition: width 0.4s ease-in-out;
+}
+
+.searchBox input[type=text]:focus {
+    width: 13rem;
+    border-bottom: .1rem solid black;
+}
+
+
+/* Buttons in top menu (hidden in mobile) */
+
+
+
+.productCont {
+    display: none;
+}
+
+/* Product page */
+
+.productPage {
+    margin: 4rem 0 0;
+    flex-direction: column;
+}
+
+/* Product page > Categories menu */ 
+
+.productCategories {
+    margin: 0 1rem;
+}
+
+/* Product page > Picture carousel */ 
+
+.productCarousel {
+    width: 100%;
+    height: 100%;
+}
+
+.productCarousel img {
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    object-position: 50% 40%;
+}
+
+/* Product page > Information */ 
+.productWrapper {
+    flex-direction: column;
+}
+.productInfo {
+    flex-direction: column;
+
+    margin: .5rem 0rem;
+    padding: 0 .8rem .8rem;
+    border-bottom: rgb(203, 203, 203) solid .1rem;
+}
+
+.wrapperActive {
+    display: none;
+}
+
+/* Product page > Alternatives > Buttons */ 
+
+.productType {
+    justify-content: space-between;
+    flex-direction: row-reverse;
+
+    margin: 0;
+    padding: 1rem 1rem 1rem 1rem;
+
+    border-bottom: rgb(203, 203, 203) solid .1rem;
+}
+
+.buttonWrapper {
+    position: relative;
+    display: inline-block;
+
+}
+
+.buttonWrapper > button {
+    width: 12rem;
+    height: 2.8rem;
+
+    font-size: 24px;
+    font-weight: bolder;
+
+    background-color: white;
+    outline: black .2rem solid;
+    border: none;
+}
+
+.size {
+    display: none;
+    position: absolute;
+    z-index: 1;
+}
+
+.size > button {
+    width: 12rem;
+    height: 2.8rem;
+
+    font-size: 24px;
+    font-weight: bolder;
+
+    background-color: white;
+    outline: black .2rem solid;
+    border: none;
+}
+
+.buttonWrapper:hover .size {
+    display: block;
+}
+
+/* Product page > Alternatives > Colors */ 
+
+.colorWrapper {
+    flex-direction: column;
+}
+
+.colorWrapper button {
+    height: 1rem;
+    width: 3.8rem;
+    
+    border: none;
+    outline: rgb(191, 191, 191) .1rem solid;
+    box-shadow: none;
+}
+
+.colorWrapper button:focus {
+    outline: black .05em solid;
+
+}
+
+.black {
+    background-color: black;
+    margin-bottom: .3rem;
+}
+
+.green {
+    background-color: var(--colour-v12);
+    margin-bottom: .3rem;
+}
+
+.white {
+    background-color: white;
+}
+
+/* Product grid */
+
+.productGrid {
+    flex-direction: row;
+}
+
+.productCard2 {
+    flex-direction: row;
+
+    height: 20rem;
+    width: 50%;
+
+    margin-top: 2rem;
+}
+
+.productCard2 > img {
+    flex-direction: row;
+
+    height: 100%;
+    width: 100%;
+    object-position: 50% 0%;
+    object-fit: cover;
+}
+
+.productCard {
+    align-items: center;
+    flex-direction: column;
+    
+    margin-top: 2rem;
+}
+
+
+/* Product page > Product suggestions */
+
+.productAlt {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr;
+    margin: .5rem 0 3rem 1rem;
+}
+
+.productAlt2 {
+    overflow: auto;
+    white-space: nowrap;
+}
+
+.productAlt2 img {
+    width: 10.5rem;
+    height: 20rem;
+
+    margin-top: 1rem;
+}
+
+.productAltInfo {
+    width: 10.5rem;
+    justify-content: flex-end;
+    flex-direction: column;
+    padding: .5rem;
+    margin: .1rem;
+}
+
+.productAltinfo > p {
+    padding-left: 2rem;
+    width: 5rem;
+}
+
+
+/* Footer nav */
+
+.footerMobile {
+    position: fixed;
+    width: 100%;
+    height: 3rem;
+    bottom: 0;
+    padding-bottom: 4rem;
+    padding-top: .5rem;
+
+    background-color: white;
+}
+
+.footerInner {
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 .8rem;
+}
+
+.footerInner button {
+    background-color: transparent;
+    color: black;
+    border: none;
+    font-size: 24px;
+    font-weight: bolder;
+    letter-spacing: .1rem;
+}
+
+  /* Footer */
+
+.footerLarge {
+    display: inline;
+}
+
+.footerLtop {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+
+    height: 22em;
+    
+    padding-top: 1rem;
+
+    background-color: var(--colour-v12);
+}
+
+.footerLtop>div {
+    margin: 1rem;
+    flex-direction: column;
+}
+
+.footerLtop a {
+    background-color: var(--colour-v12);
+    text-decoration: none;
+    color: black;
+}
+
+.footerLBottom {
+    font-size: 0.8em;
+    justify-content: center;
+    padding: 0 1rem 6rem 1rem;
+    
+    background-color:var(--colour-v12);
+
+}

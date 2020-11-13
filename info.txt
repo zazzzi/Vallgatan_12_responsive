@@ -1,0 +1,13 @@
+Camille Jademark  -  Sebastian Zazzi Jademyr
+
+www.vallgatan12.se 
+
+Vi har valt vallgatan 12's hemsida. 
+
+En tydlig avgränsning vi har gjort är att vi har använt oss av många placeholder-bilder pga den höga mängden bilder som 
+finns på hemsidan. Väldigt mycket produktbilder att ha och vi valde att göra så här för att ha mer tid åt uppbyggnaden av sidan.
+
+En annan är att flera element på sidan inte är fullt interaktiva, så som hover-effekter saknas, vissa menyer växer inte
+och visar sitt innehåll utan är statiska titlar, och vissa element saknar fulla animationer pga dessa kräver js. 
+Mycket av det här är val för att det helt enkelt inte va kritirier i uppgiften och del för att vi inte har kunskapen att göra det, 
+även om vår vision kräver det.

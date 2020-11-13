@@ -1,0 +1,32 @@
+@media only screen and (min-width: 1200px) {
+
+    /* Lading cards for desktop */
+
+    .hiddenDesktop {
+        display: none;
+    }
+
+    .showDesktop {
+        display: unset;
+    }
+
+    .mainCont {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(50rem, 1fr 1fr));
+        grid-template-rows: auto;    
+    }
+    .mainCont2 {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(20rem, 1fr 1fr 2fr));
+        grid-template-rows: auto;
+    }
+    
+    /* Product grid */
+    .productCont {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr 1fr));
+        grid-template-rows: auto;
+
+    } 
+  
+}

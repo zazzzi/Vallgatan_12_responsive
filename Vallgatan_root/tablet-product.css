@@ -1,0 +1,216 @@
+@media only screen and (min-width: 570px) {
+    /* Universal Classes */
+
+    .hiddenTablet {
+        display: none;
+    }
+    .showTablet {
+        display: unset;
+    }
+
+    /* Header  */
+    header {
+        background-color: var(--colour-v12);
+    }
+    .headerNavigation {
+        display: flex;
+    }
+    .headerNavigation button {
+        background-color: transparent;
+        border: none;
+        font-size: 1.5em;
+        font-weight: 500;
+        color: white;
+    }
+
+    .headerRight {
+        color: white;
+    }
+    .headerLogo {
+        position: fixed;
+        left: calc(50% - 25px);
+    }
+
+    /* Searchbar  */
+    .searchInput {
+        background-image:url(./icons/search-bar-vit.png);
+    }
+
+    /* Product page */
+
+    .productPage {
+        flex-direction: column;
+    }
+
+    /* Product page > Categories menu */ 
+
+    .productCategories {
+        margin: 0 1rem;
+    }
+
+    /* Product page > Picture carousel */ 
+
+    .productCarousel {
+        width: 100%;
+        height: 100%;
+    }
+
+    .productCarousel img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        object-position: 50% 40%;
+    }
+
+    /* Product page > Information */ 
+
+    .productInfo {
+        justify-content: space-between;
+        flex-direction: row;
+
+        margin: .5rem 1rem;
+        padding: 0;
+        
+        border: none;
+    }
+
+    .description, .productCare, .sustainability {
+        justify-content: space-between;
+        flex-direction: row;
+
+        margin: 0;
+        padding: 1rem 1rem .8rem 1rem;
+        
+        border-bottom: rgb(203, 203, 203) solid .1rem;
+    }
+
+    .productInfo > h4 > h5 {
+    font-size: 24px;
+    letter-spacing: .1rem;
+    }
+
+
+    /* Product page > Alternatives > Sizes */ 
+
+
+    .buttonWrapper {
+        position: relative;
+        display: inline-block;
+    }
+
+    .buttonWrapper > button {
+        width: 12rem;
+        height: 2.8rem;
+
+        font-size: 24px;
+        font-weight: bolder;
+
+        background-color: white;
+        outline: black .2rem solid;
+        border: none;
+    }
+
+    .size {
+        display: none;
+        position: absolute;
+        z-index: 0;
+    }
+
+    .size > button {
+        width: 12rem;
+        height: 2.8rem;
+
+        font-size: 24px;
+        font-weight: bolder;
+
+        background-color: white;
+        outline: black .2rem solid;
+        border: none;
+    }
+
+    .buttonWrapper:hover .size {
+        display: block;
+    }
+
+    /* Product page > Alternatives > Colors */ 
+
+    .colorWrapper {
+        flex-direction: row;
+
+    }
+
+    .colorWrapper button {
+        height: 3rem;
+        width: 3rem;
+        margin: 0 .2rem;
+        
+        border: none;
+        box-shadow: none;
+    }
+
+    .colorWrapper button:focus {
+        outline: black .05em solid;
+
+    }
+
+    .black {
+        background-color: black;
+    }
+
+    .green {
+        background-color: var(--colour-v12);
+    }
+
+    .white {
+        background-color: white;
+    }
+
+    /* Product page > Product suggestions */
+
+    .productAlt {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        margin: 1rem 0 2rem 1rem;
+    }
+
+    .productAlt2 {
+        overflow: auto;
+        white-space: nowrap;
+    }
+
+    .productAlt2 img {
+        width: 10.5rem;
+        height: 20rem;
+
+        margin-top: 1rem;
+    }
+
+    .productAltInfo {
+        width: 10.5rem;
+        justify-content: flex-end;
+    }
+
+    /* Footermobile hidden  */
+    .footerMobile {
+        display: none;
+    }
+
+    /* Footer large */
+    .footerLtop {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+        max-height: 7em;
+
+        text-align: center;
+    }
+
+    .footerLtop a {
+        text-decoration: none;
+        color: black;
+    }
+    .footerLBottom {
+        font-size: 0.8em;
+        padding: 3em 1em 1em 1em;
+    }
+
+}
